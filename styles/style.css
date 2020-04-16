@@ -24,12 +24,17 @@
 
 .link {
   text-decoration: none;
+  color: #2f80ed;
 }
 
 .list {
   list-style-type: none;
   margin: 0;
   padding: 0;
+}
+
+.text {
+  margin: 0;
 }
 
 .logo {
@@ -117,15 +122,45 @@
 }
 
 .two-columns {
-  border: solid 1px red;
+  /*border: solid 1px red;*/
   padding: 100px 0;
   width: 80%;
   display: flex;
+  justify-content: space-between;
 }
 
+.two-columns__brief {
+  /*border: solid 1px red;*/
+  width: 175px;
+}
 
+.two-columns__main-text {
+  /*border: solid 1px red;*/
+  width: 80%;
+  min-width: 784px;
+}
 
+.two-columns__list__items:nth-child(2) {
+  margin: 30px 0;
+}
 
+.two-columns__brief__text {
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.two-columns__paragraph {
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.span-accent {
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: 700;
+}
 
 
 /* и элемента с модификатором вида ключ-значение */
