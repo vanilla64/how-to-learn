@@ -9,18 +9,124 @@
   font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
+/*
+  цвета проекта
+    серый (фон) #1f1f1f
+    св. серый (фон) #f2f2f2
+    синий (ссылки, фигуры) #2f80ed
+    черный #000000
+
+Все элементы страницы хранятся в родительском блоке
+с минимальной шириной 1100px и максимальной
+шириной 1600px. Контент идет по сетке и логотип 
+в шапке и подвале находится на одном уровне.  
+*/
+
+.link {
+  text-decoration: none;
+}
+
+.list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.logo {
+  width: 183px;
+  height: 32px; 
+}
+
+.logo_place_header {
+  background-image: url(../images/logo_place_header.svg);
+  position: absolute;
+  top: 30px;
+  left: 64px;
+}
+
 .header {
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
+  position: relative;
+  background-color: #f2f2f2;
+  display: flex;
   /* выше установили ограничения для секции */
+}
+
+.header__title {
+  width: 730px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.header__title__text {
+  margin-left: 64px;
+  line-height: 96px;
+  font-size: 102px;
+  font-weight: 700;
+} 
+
+  /*display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  */
+
+.header__subtitle {
+  width: 388px;
+  position: absolute;
+  bottom: 30px;
+  left: 64px;
+  z-index: 2;
+}
+
+.header__subtitle__text {
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.header__main-illustration {
+  width: 765px;
+  height: 608px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
 }
 
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
 .header__square-pic {
   height: 568px;
   width: 568px;
+  position: absolute;
+  top: 64px;
+  right: 0;
 }
+
+.header__square-pic_color {
+  background-color: #2f80ed;
+}
+
+.description {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.two-columns {
+  border: solid 1px red;
+  padding: 100px 0;
+  width: 80%;
+  display: flex;
+}
+
+
+
+
+
 
 /* и элемента с модификатором вида ключ-значение */
 .table__cell_theme_dark {
