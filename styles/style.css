@@ -7,6 +7,7 @@
   margin: 0 auto;
   /* выше для экранов больше 1600px отцентрировали весь контент */
   font-family: 'Helvetica Neue', Arial, sans-serif;
+  box-sizing: border-box;
 }
 
 /*
@@ -102,7 +103,6 @@
   z-index: 1;
 }
 
-/* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
 .header__square-pic {
   height: 568px;
   width: 568px;
@@ -114,6 +114,7 @@
 .header__square-pic_color {
   background-color: #2f80ed;
 }
+/*Ниже стили блока description*/
 
 .description {
   display: flex;
@@ -150,7 +151,7 @@
   font-weight: normal;
 }
 
-.two-columns__paragraph {
+.two-columns__text {
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
@@ -162,11 +163,88 @@
   font-weight: 700;
 }
 
+/*Ниже стили блока digits*/
 
-/* и элемента с модификатором вида ключ-значение */
+.digits {
+  /*padding: 100px 0;*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+}
+
+.digits__title {
+  width: 60%;
+  margin-bottom: 20px;
+}
+
+.digits__title__text {
+  text-align: center;
+  line-height: 69px;
+  font-size: 60px;
+  font-weight: 700;
+}
+
+.digits__subtitle {
+  width: 60%;
+}
+
+.digits__subtitle__text {
+  text-align: center;
+  line-height: 34px;
+  font-size: 24px;
+}
+
+.table {
+  width: 1100px;
+  display: flex;
+}
+
+.table__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.table__cell {
+  /*border: solid 1px red;*/
+}
+
+.table__cell_theme_light {
+  width: 250px;
+  margin-top: 60px;
+}
+
 .table__cell_theme_dark {
   width: 200px;
-  color: white;
-  margin-right: 0;
+  /*color: white;
+  margin-right: 0;*/
   margin-top: 80px;
+}
+
+.table__heading {
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.table__heading_theme_light {
+  
+}
+
+.table__heading_theme_dark {
+
+}
+
+.table__text {
+  line-height: 1.2;
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+.table__text_theme_light {
+
+}
+
+.table__text_theme_dark {
+
 }
