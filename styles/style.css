@@ -1,11 +1,7 @@
 .page {
   min-width: 1100px;
-  /* мы ещё не умеем делать мобильную версию сайта, */
-  /* поэтому выше установлена минимальная ширина страницы */
   max-width: 1600px;
-  /* выше установили ограничение по максимальной ширине */
   margin: 0 auto;
-  /* выше для экранов больше 1600px отцентрировали весь контент */
   font-family: 'Helvetica Neue', Arial, sans-serif;
   box-sizing: border-box;
 }
@@ -23,6 +19,7 @@
 в шапке и подвале находится на одном уровне.  
 */
 
+/*Общие стили*/
 .link {
   text-decoration: none;
   color: #2f80ed;
@@ -50,9 +47,7 @@
   left: 64px;
 }
 
-.logo_place_header {
-  background-image: url("../images/logo_place_header.svg");
-}
+/*Стили блока header*/
 
 .header {
   height: 100vh;
@@ -61,7 +56,10 @@
   position: relative;
   background-color: #f2f2f2;
   display: flex;
-  /* выше установили ограничения для секции */
+}
+
+.logo_place_header {
+  background-image: url("../images/logo_place_header.svg");
 }
 
 .header__title {
@@ -78,12 +76,6 @@
   font-size: 102px;
   font-weight: 700;
 } 
-
-  /*display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  */
 
 .header__subtitle {
   width: 388px;
@@ -119,7 +111,8 @@
 .header__square-pic_color {
   background-color: #2f80ed;
 }
-/*Ниже стили блока description*/
+
+/*Стили блока description*/
 
 .description {
   display: flex;
@@ -128,7 +121,6 @@
 }
 
 .two-columns {
-  /*border: solid 1px red;*/
   padding: 100px 0;
   width: 80%;
   display: flex;
@@ -136,12 +128,10 @@
 }
 
 .two-columns__brief {
-  /*border: solid 1px red;*/
   width: 175px;
 }
 
 .two-columns__main-text {
-  /*border: solid 1px red;*/
   width: 80%;
   min-width: 784px;
 }
@@ -168,10 +158,9 @@
   font-weight: 700;
 }
 
-/*Ниже стили блока digits*/
+/*Стили блока digits*/
 
 .digits {
-  /*padding: 100px 0;*/
   padding-bottom: 100px;
   display: flex;
   flex-direction: column;
@@ -234,22 +223,15 @@
   font-weight: 700;
 }
 
-.table__heading_theme_light {
-  
-}
-
-.table__heading_theme_dark {
-  color: #fff
-}
-
 .table__text {
   line-height: 1.2;
   font-size: 18px;
   margin-top: 20px;
 }
 
-.table__text_theme_light {
-
+/*Модификатор для блока kaufman*/
+.table__heading_theme_dark {
+  color: #fff
 }
 
 .table__text_theme_dark {
@@ -320,7 +302,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #000;
+  background-color: #1f1f1f;
   overflow: hidden;
 }
 
@@ -359,7 +341,7 @@
 
 /*Стили блока footer*/
 .footer {
-  background-color: #000;
+  background-color: #1f1f1f;
   padding: 60px 0 40px 0;
   position: relative;
   box-sizing: border-box;
@@ -390,6 +372,7 @@
   justify-content: flex-end;
 }
 
+/* Не пригодились
 .footer__column_content_info {
 
 }
@@ -397,6 +380,7 @@
 .footer__column_content_social {
 
 }
+*/
 
 .column__heading {
   line-height: 30px;
@@ -404,14 +388,6 @@
   font-weight: 700;
   color: #fff;
   margin-bottom: 20px;
-}
-
-.footer__list {
-  /*padding: 20px 0;*/
-}
-
-.footer__list-items:nth-child(3+3) {
-  margin-top: 20px;
 }
 
 .column-links {
@@ -429,7 +405,4 @@
 
 .logo_place_footer {
   background-image: url("../images/logo_place_footer.svg");
-  /*position: absolute;
-  top: 30px;
-  left: 64px;*/
 }
