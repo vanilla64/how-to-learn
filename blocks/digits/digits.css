@@ -1,0 +1,10 @@
+@import url('../../blocks/section-title/section-title.css');
+@import url('../../blocks/section-subtitle/section-subtitle.css');
+@import url('../../blocks/table/table.css');
+
+.digits {
+  padding-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+}
